@@ -1,0 +1,46 @@
+/**********************************************************************************************/
+/*    Web del Romanticismo - hoja de estilo de autores                                        */
+/*   Autor: Daniel Luque Gallardo                                                             */
+/*     Versión 1.0 - 24/10/2022                                                               */
+/**********************************************************************************************/
+
+
+/****************** Estilo general ***********************************************************/
+
+
+@font-face{
+    font-family: escritura;
+    src: url('../fonts/DancingScript-VariableFont_wght.ttf');
+}
+
+body{
+    font-family: escritura;
+    font-size: 1.2rem;
+    background-image: url('../images/barcopirata3.jpg');
+    /*background-repeat: repeat-y;*/
+    background-position:center;
+   /* background-size: 15%;*/
+}
+
+#wrapper{
+    margin-left: 62%;
+    margin-right: 10%;
+    margin-top:5% ;
+    margin-bottom: 5%;
+    padding: 5px;
+    background-color: rgba(251, 249, 249, 0.15);
+    color: black;
+    border-radius: 20px;
+}
+/* el vinculo tiene un color por defecto, lo desactivamos y colocamos el nuestro */
+/* El selector a está puesto en contexto-- a dentro de wrapper */
+#wrapper a{
+    color: black;
+}
+/* Es una pseudoclase al poner el raton encima. */
+#wrapper a:hover{color: chartreuse;}
+
+
+.fa{
+    font-size: 200% !important;
+}

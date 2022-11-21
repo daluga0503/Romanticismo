@@ -1,0 +1,77 @@
+/**********************************************************************************************/
+/*    Web del Romanticismo - hoja de estilo de autores                                        */
+/*   Autor: Daniel Luque Gallardo                                                             */
+/*     Versión 1.0 - 24/10/2022                                                               */
+/**********************************************************************************************/
+
+
+/****************** Estilo general ***********************************************************/
+
+@font-face {
+    font-family: titulos;
+    src: url('./../fonts/Cinzel-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: texto;
+    src: url('./../fonts/FaunaOne-Regular.ttf');
+}
+
+body {
+    font-family: texto;
+    font-size: 1.1em;
+    box-sizing: border-box; /* para que cuente en el width, desde el borde hacia adentro*/
+    /*background-color: cornflowerblue;*/
+    background-image: url('../images/patrinpiratas.jpg');
+}
+
+#wrapper {
+    width: 70%;
+    background-color: #fff;
+    margin: auto;
+    padding: 2%;
+}
+
+
+
+
+
+h1,h2,h3 {
+    font-family: titulos;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+p{
+    text-align: justify;
+    text-indent: 2em;
+}
+
+/* con float consigo que la imagen salga con la imagen alrededor*/
+#espronceda{
+    width: 20%;
+    float: right;
+    /* margin: 10px; */
+}
+
+.limpiafloat{
+    clear:both; /* anula el apilamiento de contenidos creado por float */
+}
+/******************** media quries*************************/
+/**/
+@media only screen and (width<=900px){  /* Se abre un espacio de excepciones*/
+    /* una a una se modifican los cambios */
+    #espronceda {width: 50%;
+    }
+}
+
+
+@media only screen and (width<=500px){
+
+    #wrapper { width: 100%;} /* el wrapper debe ocupar toda la pnatalla*/
+
+    #espronceda {width: 100%;
+        padding: 0 0 15px 0;} /*SOlo mantengo el espaciado con el texto*/
+}
