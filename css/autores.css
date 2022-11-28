@@ -27,6 +27,7 @@ body {
 
 #wrapper {
     width: 70%;
+    min-height: 100vh; /** obligo a un alto minimo***/ 
     background-color: #fff;
     margin: auto;
     padding: 2%;
