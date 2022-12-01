@@ -8,17 +8,32 @@
     <!-- enlazo la hoja de estilo -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     <!-- div#wrapper>nav+section*4+footer -->
      <div id="wrapper">
-        <nav>!--aquí va el navegador--!</nav> --> -->
-        <!----
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#" class="active">Inicio</a>
+                <a href="#intro">Introducción</a>
+                <a href="#ideas">Ideas</a>
+                <a href="#autores">Autores</a>
+                <a href="#">Galería</a>
+                <a href="#">Contacto</a>
+                <!---- este vinculo es para el icono de menu hamgurguesa-->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </nav>
+       
         <section id="hero">
             <div id="titulo">Romanticismo literario
             </div>
         </section>
-        ---->
+        <!-- 
         <section id="hero2">
             <video autoplay controls loop id="myVideo">
                 <source src="./videos/Sky timelapse 05-Jun-2022 (16_52_50) [FULL HD].mp4" type="video/mp4">
@@ -26,11 +41,11 @@
                 <div id="titulo2">
                     <h1>Heading</h1>
                     <p>Lorem ipsum...</p>
-                    <!-- Use a button to pause/play the video with JavaScript -->
+                     Use a button to pause/play the video with JavaScript
                     <button id="myBtn" onclick="myFunction()">Pause</button>
                     </div>
         </section>
-
+    --->
         
 
         <!-- aqui va la presetacion de cada pagina -->
@@ -43,17 +58,149 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
 
         <!-- intro del romanticismo -->
+
+        <section id="intro">
+            <div class ="titulo-seccion">
+                Introduccion
+            </div>
+            <div class="texto-intro">
+                El romanticismo es un movimiento artístico y literario que surgió entre finales del siglo XVIII y comienzos del siglo XIX en Alemania e Inglaterra. Desde allí se extendió a toda Europa y América.
+
+El movimiento romántico está basado en la expresión de la subjetividad y la libertad creadora en oposición al academicismo y el racionalismo del arte neoclásico.
+
+Tiene su origen en la influencia del movimiento germánico Sturm und Drang (que significa ‘tormenta e ímpetu’), desarrollado entre 1767 y 1785, el cual reaccionaba contra el racionalismo ilustrado.
+
+Impulsado por el Sturm und Drang, el romanticismo rechazó la rigidez académica del neoclasicismo que, para entonces, había ganado la reputación de frío y servil al poder político.
+            </div>
+        </section>
+
+
+
+    
         <!-- <section id="hero4">
             <div id="titulo4">
                 Romantisimo literario
             </div>
         </section> -->
-        <section id="ideas">Sección3</section>
+        
+        <!--- vamos a relzar un grid de dos columnas-->
+        <section id="ideas">
+            <!--- antes del grid -->
+            <div class="titulo-seccion">
+                Ideas
+            </div>
+            <!-- div.grid2>div.col2*2 -->
+            <div class="grid2">
+                <div class="col2 imagen">
+                <img src="./images/faro.jpg" alt="el faro de turner">
+                </div>
+                <div class="col2 texto">
+                    <ul>
+                    <li>Subjetividad vs. objetividad: se enfocaron en los sentimientos intensos y místicos, como miedo, pasión, locura y soledad</li> 
+                    <li>
+                        Imaginación vs. inteligencia: revalorizaron el papel de la imaginación en el arte en cualquier de las disciplinas artísticas</li> 
+                    <li>Lo sublime vs. belleza clásica: lo sublime se entendía como la percepción de la grandeza absoluta de lo contemplado</li> 
+                    <li>Individualismo: el romántico procura la expresión del yo, el reconocimiento de la identidad individual, de la singularidad</li> 
+                    <li>Nacionalismo: el nacionalismo fue la expresión colectiva de la búsqueda de la identidad del individuo. De allí el interés por el folclore</li> 
+                    </ul>
+                </div>        
+                    <div class="col2 texto">
+                        <ul id="lista2"> <!------ para hacer qu ela lista pertenezca en la misma-->
+                        <li>Liberacion de las reglas academicistas: subordinan la técnica a la expresión individual y no al contrario.</li>
+                        <li>Redescubrimiento de la naturaleza: se convierte al paisaje en una metáfora del mundo interior y una fuente de inspiración</li>
+                        <li>Carácter visionario u onírico: sueños, pesadillas, fantasías y fantasmagorías, donde la imaginación se libera de lo racional</li>
+                        <li>Nostalgia por el pasado:  sienten que con la modernización se han perdido la unidad entre el hombre y la naturaleza, e idealizan el pasado
+                        </li>
+                        <li>Idea de genio atormentado e incomprendido: se le distingue por su imaginación y originalidad y, también, por la narrativa de una vida atormentada.
+                        </li>
+                    </ul>
+                    <p class="centrado">
+                        Para saber más, visita <a class="enlace" href="https://www.culturagenial.com/es/romanticismo/" target="_blank">este blog</a>
+                    </p>
+                </div>
+                <div class="col2 imagen">
+                    <img src="./images/libertad.jpg" alt="libertad">
+                </div>
+            </div>
+        </section>
+
+
         <!-- caules son los principios del movimiento -->
-        <section id="autores">Sección4</section>
-        <!--  -->
-        <footer>Footer</footer>
-        <!--  -->
+        <section id="autores">
+            <!-- título de sección -->
+            <div class="titulo-seccion">
+                Autores
+            </div>
+            <!-- div.grid4>div.col4*4 -->
+            <div class="grid4">
+               <div class="col4">
+                   <div class="card">
+                       <img src="./images/jose espronceda.jpg" alt="Retrato de Espronceda" >
+                       <div class="container">
+                         <h4><b>Jose de <br>Espronceda</b></h4>
+                         <p>Architect & Engineer</p>
+                         <a href="Jose de espronceda.html">Leer más</a>
+                       </div>
+                     </div> 
+               </div>
+               <div class="col4">
+                   <div class="card">
+                       <img src="./images/becquer.jpg" alt="Retrato de Becquer" >
+                       <div class="container">
+                         <h4><b>Gustavo Adolfo <br>Becquer</b></h4>
+                         <p>Poeta</p>
+                         <a href="#">Leer más</a>
+                       </div>
+                     </div>
+               </div>
+               <div class="col4">
+                   <div class="card">
+                       <img src="./images/larra.jpg" alt="Retrato de Larra" >
+                       <div class="container">
+                         <h4><b>Mariano Jose <br>de Larra</b></h4>
+                         <p>Articulista</p>
+                         <a href="#">Leer más</a>
+                       </div>
+                     </div>
+               </div>
+               <div class="col4">
+                   <div class="card">
+                       <img src="./images/zorrilla.jpg" alt="Retrato de Zorrilla" >
+                       <div class="container">
+                         <h4><b>Jose<br>Zoriila</b></h4>
+                         <p>Dramaturgo</p>
+                         <a href="#">Leer más</a>
+                       </div>
+                     </div>
+               </div>
+            </div>
+
+       </section>
+        
+        <footer>
+            <div class="grid5">
+                <div class="col3">
+                    <img src="./images/favicon.png" alt="pluma literaria">
+                </div>
+                <div class="col3">
+                    <a class="enlace" href="#">Inicio</a><br>
+                    <a class="enlace" href="#intro">Introduccion</a><br>
+                    <a class="enlace" href="#ideas">Ideas</a><br>
+                    <a class="enlace" href="#autores">Autores</a><br>
+                    <a class="enlace" href="#galeria">Galería</a><br>
+                </div>
+                <div class="col3">
+                    <p>Siguenos en redes sociales</p>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </footer>
+        
     </div>
+    <script src="./js/funciones.js"></script>
 </body>
 </html>
